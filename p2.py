@@ -2,7 +2,7 @@ import cv2
 from functools import wraps
 from pygame import mixer
 import time
-
+# here is some added!
 lastsave = 0
 def counter(func):
     @wraps(func)
