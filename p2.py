@@ -2,7 +2,7 @@ import cv2
 from functools import wraps
 from pygame import mixer
 import time
-# here is some added!
+# here is some added!add somethinf
 lastsave = 0
 def counter(func):
     @wraps(func)
@@ -10,7 +10,7 @@ def counter(func):
         tmp.count += 1
         global lastsave
         if time.time() - lastsave > 3:
-            # 这是以秒为单位，所以 5 分钟 = 300 秒
+            # 这是以秒为单位，所以 5 分钟 = 300 秒,所以
             lastsave = time.time()
             tmp.count = 0
         return func(*args, **kwargs)
