@@ -10,7 +10,7 @@ def counter(func):
         tmp.count += 1
         global lastsave
         if time.time() - lastsave > 3:
-            # 这是以秒为单位，所以 5 分钟 = 300 秒,所以
+            # 
             lastsave = time.time()
             tmp.count = 0
         return func(*args, **kwargs)
